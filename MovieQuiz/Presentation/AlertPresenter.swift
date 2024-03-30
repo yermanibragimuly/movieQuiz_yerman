@@ -7,7 +7,7 @@
 import UIKit
 import Foundation
 
-class AlertPresenter: AlertProtocol {
+final class AlertPresenter: AlertProtocol {
     private weak var delegate: UIViewController?
     init(viewController: UIViewController? = nil) {
         self.delegate = viewController
