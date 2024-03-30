@@ -51,7 +51,6 @@ final class StatisticServiceImplementation: StatisticService {
             userDefaults.set(newValue, forKey: Keys.gamesCount.rawValue)
         }
     }
-
     var totalAccuracy: Double {
         return Double(correct) / Double(total) * 100
     }
@@ -62,16 +61,14 @@ final class StatisticServiceImplementation: StatisticService {
                   let record = try? JSONDecoder().decode(GameRecord.self, from: data) else {
                 return .init(correct: 0, total: 0, date: Date())
             }
-
             return record
         }
-
+        
         set {
             guard let data = try? JSONEncoder().encode(newValue) else {
                 print("Невозможно сохранить результат")
                 return
             }
-
             userDefaults.set(data, forKey: Keys.bestGame.rawValue)
         }
     }
@@ -80,9 +77,7 @@ final class StatisticServiceImplementation: StatisticService {
         correct += count
         total += amount
         gamesCount += 1
-
         let newRecord = GameRecord(correct: count, total: amount, date: Date())
-
         if newRecord.isBetterThen(bestGame) {
             bestGame = newRecord
         }
