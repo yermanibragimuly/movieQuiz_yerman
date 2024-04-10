@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -45,7 +45,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The Godfather" translatesAutoresizingMaskIntoConstraints="NO" id="FnP-q4-OJo" userLabel="Preview Image">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FnP-q4-OJo" userLabel="Preview Image">
                                         <rect key="frame" x="0.0" y="43.5" width="374" height="561"/>
                                         <color key="backgroundColor" name="YP White"/>
                                         <constraints>
@@ -111,13 +111,18 @@
                                     <constraint firstItem="FnP-q4-OJo" firstAttribute="leading" secondItem="RWF-JV-Vdx" secondAttribute="leading" id="eJe-uf-Gfg"/>
                                 </constraints>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Pi8-kV-eiN">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="YP Black"/>
                         <constraints>
+                            <constraint firstItem="Pi8-kV-eiN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I9X-Pm-R3B"/>
                             <constraint firstItem="swa-6a-nkA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="JZB-py-yUU"/>
                             <constraint firstItem="RWF-JV-Vdx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="L4b-Rd-249"/>
                             <constraint firstItem="swa-6a-nkA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Zdn-QU-KoX"/>
+                            <constraint firstItem="Pi8-kV-eiN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bwR-8J-1zH"/>
                             <constraint firstItem="RWF-JV-Vdx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="cuu-PT-Cy8"/>
                             <constraint firstItem="9mt-wD-KM4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eMm-p1-TO2"/>
                             <constraint firstItem="D2D-OA-ZRs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hyQ-QW-OIM"/>
@@ -126,6 +131,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="Pi8-kV-eiN" id="WmR-UA-uNl"/>
                         <outlet property="counterLabel" destination="44h-qv-ZJi" id="1y5-9V-xVx"/>
                         <outlet property="imageView" destination="FnP-q4-OJo" id="YGl-46-Tup"/>
                         <outlet property="isEnabledNoButton" destination="TRh-SJ-aKw" id="FYN-Lb-fvS"/>
@@ -139,7 +145,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="The Godfather" width="1192" height="1716"/>
         <namedColor name="YP Black">
             <color red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
