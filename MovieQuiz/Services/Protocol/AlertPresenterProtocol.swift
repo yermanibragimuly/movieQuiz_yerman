@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol AlertProtocol {
-    func show(alertModel: AlertModel)
+protocol AlertPresenterProtocol {
+    func showResult(alertModel: AlertModel)
 }

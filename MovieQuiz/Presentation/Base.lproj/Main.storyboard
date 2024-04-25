@@ -84,7 +84,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="noButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsU-UT-2Bw"/>
+                                                    <action selector="noButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="4kK-5r-Hej"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAk-o4-jC0">
@@ -101,7 +101,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="yesButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UBe-UM-a0l"/>
+                                                    <action selector="yesButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="dHf-Rh-c9X"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -134,8 +134,8 @@
                         <outlet property="activityIndicator" destination="Pi8-kV-eiN" id="WmR-UA-uNl"/>
                         <outlet property="counterLabel" destination="44h-qv-ZJi" id="1y5-9V-xVx"/>
                         <outlet property="imageView" destination="FnP-q4-OJo" id="YGl-46-Tup"/>
-                        <outlet property="isEnabledNoButton" destination="TRh-SJ-aKw" id="FYN-Lb-fvS"/>
-                        <outlet property="isEnabledYesButton" destination="CAk-o4-jC0" id="dh4-iB-UhR"/>
+                        <outlet property="isEnabledNoButton" destination="TRh-SJ-aKw" id="fHA-a6-mgK"/>
+                        <outlet property="isEnabledYesButton" destination="CAk-o4-jC0" id="YvI-L0-49n"/>
                         <outlet property="textLabel" destination="D2D-OA-ZRs" id="xPv-Eg-5k3"/>
                     </connections>
                 </viewController>
