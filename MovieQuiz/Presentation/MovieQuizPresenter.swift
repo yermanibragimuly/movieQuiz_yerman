@@ -73,7 +73,7 @@ final class MovieQuizPresenter: QuestionFactoryDelegate {
         if isLastQuestion() {
             statisticService?.store(correct: correctAnswers, total: questionsAmount)
             let alertModel = AlertModel(
-                title: "Этот раунд окончен",
+                title: "Этот раунд окончен!",
                 message: createMessage(),
                 buttonText: "Сыграть еще раз") { [weak self] _ in
                     guard let self else { return }
