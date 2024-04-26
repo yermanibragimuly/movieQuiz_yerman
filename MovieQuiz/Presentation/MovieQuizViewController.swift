@@ -70,8 +70,8 @@ final class MovieQuizViewController: UIViewController, MovieQuizViewControllerPr
         }
         
         func blockButton(isBlocked: Bool) {
-            isEnabledNoButton.isEnabled = isBlocked ? false : true
-            isEnabledYesButton.isEnabled = isBlocked ? false : true
+            isEnabledNoButton.isEnabled = !isBlocked
+            isEnabledYesButton.isEnabled = !isBlocked
         }
         
         func setupImageBorder(isHidden: Bool) {
